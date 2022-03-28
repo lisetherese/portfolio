@@ -1,6 +1,3 @@
-/**
-* Author: Lise Therese
-*/
 
 (function() {
   "use strict";
@@ -255,4 +252,29 @@
     });
   });
 
-})()
+})();
+
+  /**
+   * Show files
+   */
+   function showFile(fileName){
+    document.getElementById("showPDF").innerHTML = "";
+    document.getElementById("showPDF").innerHTML += `
+    <h4>La documentation</h4>
+      <div class="object-pdf">
+          <object data="assets/file/${fileName}.pdf" type="application/pdf" width="100%" height="700"></object>
+          <p>Si le fichier n'apparaît pas, veuillez <a href="assets/file/${fileName}.pdf" target="_blank">cliquer ici</a></p>
+      </div>`;
+  }
+  /**
+   * Show file of stage
+   */
+   function showFileStage(titre, filename){
+    document.getElementById("showPDF").innerHTML = "";
+    document.getElementById("showPDF").innerHTML += `
+    <h4>${titre}</h4>
+      <div class="object-pdf">
+          <object data="assets/file/${filename}.pdf" type="application/pdf" width="100%" height="700"></object>
+          <p>Si le fichier n'apparaît pas, veuillez <a href="assets/file/${filename}.pdf" target="_blank">cliquer ici</a></p>
+      </div>`;
+  }

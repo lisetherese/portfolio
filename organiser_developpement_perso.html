@@ -77,6 +77,7 @@
       </nav><!-- .navbar -->
 
       <div class="header-social-links">
+        <a href="https://github.com/lisetherese" class="github" target="_blank"><i class="bi bi-github"></i></a>
         <a href="https://twitter.com/dreamland_me" class="twitter" target="_blank"><i class="bi bi-twitter"></i></a>
         <a href="https://www.facebook.com/lisetheresepkp" class="facebook" target="_blank"><i class="bi bi-facebook"></i></a>
         <a href="https://www.linkedin.com/in/lise-therese-phi-ky-phong-399166227/" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></i></a>
@@ -96,14 +97,56 @@
           <h2>Organiser son développement professionnel</h2>
           <p>Ce sont des documents pour expliquer comment j'organise mon développement professionnel</p>
         </div>
-        <div class="object-pdf">
-            <object data="assets/file/GERER_SON_IDENTITE_PROFESSIONNELLE.pdf" type="application/pdf" width="100%" height="700"></object>
-            <p>Si le fichier n'apparaît pas, veuillez <a href="assets/file/GERER_SON_IDENTITE_PROFESSIONNELLE.pdf" target="_blank">cliquer ici</a></p>
+
+        <div class="row">
+          <div class="col-12 col-md-4 d-flex justify-content-around align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon">
+                <img src="assets/img/tableau_synthese/portfolio.PNG" alt="documentation">
+              </div>
+              <h4>Portfolio</h4>
+              <p>Mettre en place son environnement d’apprentissage personnel</p>
+              <p>Gérer son identité professionnelle</p>
+              <div class="align-center">
+                <button type="button" class="btn btn-primary" onclick="showFile('GERER_SON_IDENTITE_PROFESSIONNELLE')">Afficher ci-dessous</button>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="col-12 col-md-4 d-flex justify-content-around align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box iconbox-orange ">
+              <div class="icon">
+                <img src="assets/img/tableau_synthese/google_alert.png" alt="documentation">
+              </div>
+              <h4>Google Alert</h4>
+              <p>Mettre en œuvre des outils et stratégies de veille informationnelle</p>
+              <p><br></p>
+              <div class="align-center">
+                <button type="button" class="btn btn-primary" onclick="showFile('METTRE_EN_UVRE_DES_OUTILS_ET_STRATEGIES_DE_VEILLE_INFORMATIONNELLE')">Afficher ci-dessous</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4 d-flex justify-content-around align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box iconbox-orange ">
+              <div class="icon">
+                <img src="assets/img/tableau_synthese/projet_pro.png" alt="documentation">
+              </div>
+              <h4>Projets</h4>
+              <p>Développer son projet professionnel<br><br></p>
+              <p><br></p>
+              <div class="align-center">
+                <button type="button" class="btn btn-primary" onclick="window.location.href='projets_professionnels.html'">Lire la suite</button>
+              </div>
+            </div>
+          </div>
+
         </div>
-        <div class="object-pdf">
-            <object data="assets/file/METTRE_EN_UVRE_DES_OUTILS_ET_STRATEGIES_DE_VEILLE_INFORMATIONNELLE.pdf" type="application/pdf" width="100%" height="700"></object>
-            <p>Si le fichier n'apparaît pas, veuillez <a href="assets/file/METTRE_EN_UVRE_DES_OUTILS_ET_STRATEGIES_DE_VEILLE_INFORMATIONNELLE.pdf" target="_blank">cliquer ici</a></p>
+        
+        <div id="showPDF">
         </div>
+        
     </div>
     </section><!-- End Services Section -->
 

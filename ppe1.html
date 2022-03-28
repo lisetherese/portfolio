@@ -25,6 +25,7 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -77,6 +78,7 @@
       </nav><!-- .navbar -->
 
       <div class="header-social-links">
+        <a href="https://github.com/lisetherese" class="github" target="_blank"><i class="bi bi-github"></i></a>
         <a href="https://twitter.com/dreamland_me" class="twitter" target="_blank"><i class="bi bi-twitter"></i></a>
         <a href="https://www.facebook.com/lisetheresepkp" class="facebook" target="_blank"><i class="bi bi-facebook"></i></a>
         <a href="https://www.linkedin.com/in/lise-therese-phi-ky-phong-399166227/" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></i></a>
@@ -101,13 +103,47 @@
             d’aborder plus particulièrement les processus « Gestion du patrimoine informatique » et « Fourniture de services » en vue d’appréhender une configuration sur les plans technique et
             financier, de fournir un service aux utilisateurs par la mise à disposition de cette configuration et de
             vérifier la conformité du service fourni à un cahier des charges. </p>
-          <p>Le travail demandé sollicite des savoirs et savoir-faire associés aux deux processus « Conception et maintenance des solutions d’infrastructure » et « Conception et maintenance des
-           solutions applicatives » en cours de construction dans les modules SI1 à SI4. 
+          <p>Pour répondre aux exigences de ce AP, nous avons créé une entreprise fictive nommée WEBMANA avec tous les documents nécessaires.
            </p>
         </div>
-        <div class="object-pdf">
-            <object data="assets/file/WEBMANA.pdf" type="application/pdf" width="100%" height="700"></object>
-            <p>Si le fichier n'apparaît pas, veuillez <a href="assets/file/WEBMANA.pdf" target="_blank">cliquer ici</a></p>
+        <div class="row">
+          
+          <div class="col-12 col-md-6 d-flex justify-content-around align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box iconbox-orange ">
+              <div class="icon">
+                <img src="assets/img/ppe/logo.png" alt="présentation de l'entreprise">
+              </div>
+              <h4>La présentation de l'entreprise</h4>
+              <div class="align-center">
+                <button type="button" class="btn btn-primary" onclick="showFile('ap1/WEBMANA')">Afficher ci-dessous</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 d-flex justify-content-around align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box iconbox-orange ">
+              <div class="icon">
+                <img src="assets/img/stage/documentation.png" alt="autres documents">
+              </div>
+              <h4>Les documents de l'entreprise</h4>
+              
+              <div class="btn-group">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Afficher ci-dessous</button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" onclick="showFile('ap1/DEVIS')">Devis de l'entreprise</a>
+                  <a class="dropdown-item" onclick="showFile('ap1/FACTURE')">Facture de l'entreprise</a>
+                  <a class="dropdown-item" onclick="showFile('ap1/FICHES DE POSTE')">Fiches de poste</a>
+                  <a class="dropdown-item" onclick="showFile('ap1/KBIS_EXTRAIT')">Extrait de Kbis</a>
+                  <a class="dropdown-item" onclick="showFile('ap1/SAS_WEBMANA_STATUT')">Statut de SAS WEBMANA</a>
+                  <a class="dropdown-item" onclick="showFile('ap1/STRATEGIE_MARKETING')">Stratégie marketing de WEBMANA</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div id="showPDF">
         </div>
     </div>
     </section><!-- End Services Section -->
@@ -129,6 +165,9 @@
   <a href="tableau_de_synthese.html" class="tableau d-flex align-items-center justify-content-center"><i class="bi bi-journal-check"></i><span>Tableau de synthèse</span></a>
 
   <!-- Vendor JS Files -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <script src="assets/vendor/purecounter/purecounter.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
